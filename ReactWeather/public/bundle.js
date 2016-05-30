@@ -24802,6 +24802,7 @@
 	var _require = __webpack_require__(159);
 
 	var Link = _require.Link;
+	var IndexLink = _require.IndexLink;
 
 
 	var Nav = React.createClass({
@@ -24817,18 +24818,18 @@
 	        'Nav component'
 	      ),
 	      React.createElement(
-	        Link,
-	        { to: '/' },
+	        IndexLink,
+	        { to: '/', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
 	        'Get Weather'
 	      ),
 	      React.createElement(
 	        Link,
-	        { to: '/about' },
+	        { to: '/about', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
 	        'About'
 	      ),
 	      React.createElement(
 	        Link,
-	        { to: '/example' },
+	        { to: '/example', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
 	        'Example'
 	      )
 	    );
